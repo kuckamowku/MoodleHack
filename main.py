@@ -39,8 +39,6 @@ class MainWindow(QMainWindow):
         questions = []
         answers = []
         for j in range(len(text['d']['sl']['g'])):
-            if len(text['d']['sl']['g']) > 1 and j == 0:
-                continue
             for i in range(len(text['d']['sl']['g'][j]['S'])):
                 questions.append(text['d']['sl']['g'][j]['S'][i]['D']['d'][0])
                 answer = 'N/A'
